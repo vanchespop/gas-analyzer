@@ -1,0 +1,41 @@
+@import 'styles/variables';
+
+.alarm {
+  min-width: 150px;
+  max-width: 300px;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+  position: relative;
+
+  &__indicator {
+    &::before {
+      content: "";
+      position: absolute;
+      right: 20px;
+      border-radius: 100em;
+      width: 20px;
+      height: 20px;
+      z-index: 1;
+      background: $light-gray;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      border-radius: 100em;
+      width: 12px;
+      height: 12px;
+      z-index: 1;
+      background: $green;
+      top: 9px;
+      right: 24px;
+    }
+
+    &-active {
+      &::after {
+        background: $red;
+      }
+    }
+  }
+}

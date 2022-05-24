@@ -1,0 +1,26 @@
+@import 'styles/variables';
+@import 'styles/mixins';
+
+.menu {
+  @include adaptive-padding;
+  background: $gray;
+  width: 100vw;
+  height: fit-content;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+
+  &__item {
+    cursor: pointer;
+    font-size: 15px;
+    color: $white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 40px 14px 0;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}

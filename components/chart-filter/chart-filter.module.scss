@@ -1,0 +1,15 @@
+@import '/styles/variables';
+
+.chart-filter {
+  font-size: 13px;
+  cursor: pointer;
+  border: solid 1px $gray;
+  border-radius: 8px;
+  width: 60px;
+  text-align: center;
+  padding: 8px;
+
+  &:hover {
+    background: $bone;
+  }
+}

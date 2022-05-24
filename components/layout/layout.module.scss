@@ -1,0 +1,9 @@
+@import 'styles/variables';
+@import 'styles/mixins';
+
+.content-container {
+  @include adaptive-padding;
+  min-height: calc(100vh - 196px);
+  background: $light-gray;
+
+}

@@ -1,0 +1,14 @@
+@import 'styles/variables';
+@import 'styles/mixins';
+
+.footer {
+  @include adaptive-padding;
+  font-size: 14px;
+  height: 80px;
+  width: 100vw;
+  background: $black;
+  color: $white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}

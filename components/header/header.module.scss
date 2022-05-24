@@ -1,0 +1,20 @@
+@import 'styles/variables';
+@import 'styles/mixins';
+
+.header {
+  height: fit-content;
+  width: 100vw;
+  background: $black;
+  display: flex;
+  flex-direction: column;
+
+  &__title {
+    @include adaptive-padding;
+    user-select: none;
+    color: $white;
+    height: 70px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
